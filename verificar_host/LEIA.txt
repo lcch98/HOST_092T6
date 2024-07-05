@@ -1,0 +1,31 @@
+Requisitos
+Python 3.x
+verificar_host
+Você pode instalar a biblioteca verificar_host usando o seguinte comando:
+
+   pip3 install verificar_host
+Caso não pegue, versão alternativa:
+
+   pip3 install --upgrade scapy
+   pip3 install scapy
+Uso
+
+Port Scanner
+Um script simples de varredura de portas em Python que verifica se determinadas portas em um host estão abertas.
+
+Execute o script da seguinte maneira:
+
+
+cd VerificarHost
+sudo python3 verificar_host.py -h
+
+Se nenhum argumento for fornecido para as portas, as seguintes portas serão verificadas por padrão: 21, 22, 23, 25, 80, 443, 445, 8080, 8443, 3306, 139, 135.
+
+Exemplo:
+
+sudo python3 verificar_host.py google.com 80,443,8080
+Contribuindo
+Sinta-se à vontade para contribuir com melhorias, correções de bugs ou adição de recursos. Abra uma issue para discutir grandes alterações antes de enviar um pull request.
+
+Aviso
+Este script é fornecido apenas para fins educacionais. Não use este script para varredura de portas em sistemas que você não possui ou não tem permissão para testar.
